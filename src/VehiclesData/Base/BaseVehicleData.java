@@ -1,4 +1,4 @@
-package VehiclesData;
+package VehiclesData.Base;
 
 public abstract class BaseVehicleData {
     protected String vehicleBrand;

@@ -1,6 +1,7 @@
-package VehiclesPool;
+package VehiclesPool.Implemetation;
 
-import VehiclesData.CarData;
+import VehiclesData.Implementation.CarData;
+import VehiclesPool.Interfaces.IPool;
 
 public class CarsPool implements IPool {
     private CarData[] carsData;

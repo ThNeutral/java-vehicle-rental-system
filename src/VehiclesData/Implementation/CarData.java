@@ -1,4 +1,6 @@
-package VehiclesData;
+package VehiclesData.Implementation;
+
+import VehiclesData.Base.BaseVehicleData;
 
 public class CarData extends BaseVehicleData {
     protected int safetyRating;

@@ -1,6 +1,6 @@
-package VehiclesPool;
+package VehiclesPool.Interfaces;
 
-import VehiclesData.BaseVehicleData;
+import VehiclesData.Base.BaseVehicleData;
 
 public interface IPool {
     public BaseVehicleData getVehicleData(int index);

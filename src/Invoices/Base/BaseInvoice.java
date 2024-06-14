@@ -1,10 +1,13 @@
-package Invoices;
+package Invoices.Base;
 
-import VehiclesData.BaseVehicleData;
+import Invoices.Helpers.InvoicePrintData;
+import Invoices.Interfaces.ISpecific;
+import VehiclesData.Base.BaseVehicleData;
+import jdk.jshell.spi.ExecutionControl;
 
 import java.util.Date;
 
-public class BaseInvoice implements ISpecific{
+public class BaseInvoice implements ISpecific {
     protected String customerName;
     protected BaseVehicleData rentedVehicle;
     protected Date reservationStartDate;
@@ -35,9 +38,10 @@ public class BaseInvoice implements ISpecific{
 
     @Override
     public void setSpecificInformation(int specificInformation) {
+        throw new UnsupportedOperationException();
     }
 
-    public void printInvoice() {
-
+    public InvoicePrintData getInvoicePrintData() {
+        throw new UnsupportedOperationException();
     }
 }

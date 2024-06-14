@@ -1,6 +1,7 @@
-package VehiclesPool;
+package VehiclesPool.Implemetation;
 
-import VehiclesData.MotorcycleData;
+import VehiclesData.Implementation.MotorcycleData;
+import VehiclesPool.Interfaces.IPool;
 
 public class MotorcyclesPool implements IPool {
     private MotorcycleData[] motorcyclesData;

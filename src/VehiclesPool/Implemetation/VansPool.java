@@ -1,8 +1,9 @@
-package VehiclesPool;
+package VehiclesPool.Implemetation;
 
-import VehiclesData.VanData;
+import VehiclesData.Implementation.VanData;
+import VehiclesPool.Interfaces.IPool;
 
-public class VansPool implements IPool{
+public class VansPool implements IPool {
     private VanData[] vansData;
     public VansPool() {
         VanData vd1 = new VanData();
@@ -22,7 +23,7 @@ public class VansPool implements IPool{
 
     @Override
     public void printVehiclesData() {
-        System.out.println("Available motorcycles:");
+        System.out.println("Available vans:");
         for (int i = 0; i < vansData.length; i++) {
             VanData cd = vansData[i];
             System.out.println((i + 1) + " - " + cd.getVehicleBrand() + " " + cd.getVehicleModel());

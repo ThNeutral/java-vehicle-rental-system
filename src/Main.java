@@ -1,11 +1,12 @@
 import CLI.CLI;
 import CLI.Helpers.VehicleTypes;
-import Invoices.BaseInvoice;
-import VehiclesData.BaseVehicleData;
-import VehiclesPool.CarsPool;
-import VehiclesPool.IPool;
-import VehiclesPool.MotorcyclesPool;
-import VehiclesPool.VansPool;
+import Invoices.Base.BaseInvoice;
+import Invoices.Helpers.InvoicePrintData;
+import VehiclesData.Base.BaseVehicleData;
+import VehiclesPool.Implemetation.CarsPool;
+import VehiclesPool.Interfaces.IPool;
+import VehiclesPool.Implemetation.MotorcyclesPool;
+import VehiclesPool.Implemetation.VansPool;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +18,7 @@ public class Main {
         };
         BaseVehicleData bvd = CLI.getVehicleDataFromUser(pool);
         BaseInvoice bi = CLI.getInvoiceDataFromUser(vt, bvd);
-        CLI.printInvoice(bi);
+        InvoicePrintData ipd = bi.getInvoicePrintData();
+        CLI.printInvoice(ipd);
     }
 }
