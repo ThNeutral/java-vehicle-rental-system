@@ -27,7 +27,7 @@ public class VansPool implements IPool {
         for (int i = 0; i < vansData.length; i++) {
             VanData cd = vansData[i];
             System.out.println((i + 1) + " - " + cd.getVehicleBrand() + " " + cd.getVehicleModel());
-            System.out.println("\tMotorcycle Value: " + cd.getVehiclePrice());
+            System.out.println("\tVan Value: " + cd.getVehiclePrice());
         }
     }
 
